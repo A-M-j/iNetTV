@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 				
 		// *** Enter below the URL of your Pastebin "RAW" link (make sure your text file is in the right format see exemple below) ***
-                let jsonData = NSData(contentsOfURL: NSURL(string: "http://pastebin.com/raw/jMp0pyNd")!)
+        let jsonData = NSData(contentsOfURL: NSURL(string: "http://pastebin.com/raw/jMp0pyNd")!)
 		
 		do {
 			let JSON = try NSJSONSerialization.JSONObjectWithData(jsonData!, options:NSJSONReadingOptions(rawValue: 0))
@@ -61,7 +61,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

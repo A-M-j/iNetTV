@@ -8,7 +8,7 @@
         <!--category-->
         <scene sceneID="wQD-em-Mem">
             <objects>
-                <collectionViewController storyboardIdentifier="CollectionView" title="category" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nQN-JF-qew" customClass="ViewController" customModule="EZ_IPTV" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="CollectionView" title="category" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nQN-JF-qew" customClass="ViewController" customModule="iNetTV" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="Deutsch" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="prototypes" id="roY-sU-I2j">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SenderCollectionViewCell" id="bJ6-Yv-aGf" customClass="SenderCollectionViewCell" customModule="EZ_IPTV" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SenderCollectionViewCell" id="bJ6-Yv-aGf" customClass="SenderCollectionViewCell" customModule="iNetTV" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="145" width="400" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -108,7 +108,7 @@
         <!--Main Tab Bar Controller-->
         <scene sceneID="wyF-ya-Wy0">
             <objects>
-                <tabBarController id="82h-qH-E09" customClass="MainTabBarController" customModule="EZ_IPTV" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="82h-qH-E09" customClass="MainTabBarController" customModule="iNetTV" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="GDF-rK-gVB">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="140"/>
                         <autoresizingMask key="autoresizingMask"/>

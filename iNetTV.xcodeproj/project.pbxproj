@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,10 +22,10 @@
 /* Begin PBXFileReference section */
 		5ED12EF61C16054B00D7FB5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5ED12EF81C16055300D7FB5C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		5ED8F3151C38317A00582400 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "ez-iptv/Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		5ED8F3151C38317A00582400 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "inettv/Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		5EED06E01C161C16002BCA03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7904EB441BDABC5C00FA9DC1 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		797C5FFB1BD40CBB00E2BFB4 /* EZ IPTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EZ IPTV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		797C5FFB1BD40CBB00E2BFB4 /* iNetTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNetTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797C5FFE1BD40CBB00E2BFB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		797C60031BD40CBB00E2BFB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		797C60071BD40CBB00E2BFB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,20 +53,21 @@
 			children = (
 				5ED12EF81C16055300D7FB5C /* AVKit.framework */,
 				5ED12EF61C16054B00D7FB5C /* UIKit.framework */,
-				797C5FFD1BD40CBB00E2BFB4 /* ez-iptv */,
+				797C5FFD1BD40CBB00E2BFB4 /* inettv */,
 				797C5FFC1BD40CBB00E2BFB4 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		797C5FFC1BD40CBB00E2BFB4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				797C5FFB1BD40CBB00E2BFB4 /* EZ IPTV.app */,
+				797C5FFB1BD40CBB00E2BFB4 /* iNetTV.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
-		797C5FFD1BD40CBB00E2BFB4 /* ez-iptv */ = {
+		797C5FFD1BD40CBB00E2BFB4 /* inettv */ = {
 			isa = PBXGroup;
 			children = (
 				797C5FFE1BD40CBB00E2BFB4 /* AppDelegate.swift */,
@@ -80,15 +81,15 @@
 				797C60171BD4242C00E2BFB4 /* TVStationsController.swift */,
 				7904EB441BDABC5C00FA9DC1 /* MainTabBarController.swift */,
 			);
-			path = "ez-iptv";
-			sourceTree = "<group>";
+			path = inettv;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		797C5FFA1BD40CBB00E2BFB4 /* EZ IPTV */ = {
+		797C5FFA1BD40CBB00E2BFB4 /* iNetTV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 797C600A1BD40CBB00E2BFB4 /* Build configuration list for PBXNativeTarget "EZ IPTV" */;
+			buildConfigurationList = 797C600A1BD40CBB00E2BFB4 /* Build configuration list for PBXNativeTarget "iNetTV" */;
 			buildPhases = (
 				797C5FF71BD40CBB00E2BFB4 /* Sources */,
 				797C5FF81BD40CBB00E2BFB4 /* Frameworks */,
@@ -99,9 +100,9 @@
 			);
 			dependencies = (
 			);
-			name = "EZ IPTV";
+			name = iNetTV;
 			productName = "Öffentlich Rechtliche LIVE";
-			productReference = 797C5FFB1BD40CBB00E2BFB4 /* EZ IPTV.app */;
+			productReference = 797C5FFB1BD40CBB00E2BFB4 /* iNetTV.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,16 +111,18 @@
 		797C5FF31BD40CBB00E2BFB4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = com.srcfix;
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = kanestv;
+				ORGANIZATIONNAME = srcfix;
 				TargetAttributes = {
 					797C5FFA1BD40CBB00E2BFB4 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = EK7C8B9L6Q;
 					};
 				};
 			};
-			buildConfigurationList = 797C5FF61BD40CBB00E2BFB4 /* Build configuration list for PBXProject "EZ IPTV" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 797C5FF61BD40CBB00E2BFB4 /* Build configuration list for PBXProject "iNetTV" */;
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -131,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				797C5FFA1BD40CBB00E2BFB4 /* EZ IPTV */,
+				797C5FFA1BD40CBB00E2BFB4 /* iNetTV */,
 			);
 		};
 /* End PBXProject section */
@@ -280,14 +283,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "ez-iptv/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/inettv/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kane2931.eziptv;
-				PRODUCT_NAME = "EZ IPTV";
+				PRODUCT_BUNDLE_IDENTIFIER = com.srcfix.iNetTV;
+				PRODUCT_NAME = iNetTV;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ez-iptv/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "inettv/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Debug;
 		};
@@ -298,20 +301,20 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "ez-iptv/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/inettv/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kane2931.eziptv;
-				PRODUCT_NAME = "EZ IPTV";
+				PRODUCT_BUNDLE_IDENTIFIER = com.srcfix.iNetTV;
+				PRODUCT_NAME = iNetTV;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ez-iptv/Bridging-Header.h";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "inettv/Bridging-Header.h";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		797C5FF61BD40CBB00E2BFB4 /* Build configuration list for PBXProject "EZ IPTV" */ = {
+		797C5FF61BD40CBB00E2BFB4 /* Build configuration list for PBXProject "iNetTV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				797C60081BD40CBB00E2BFB4 /* Debug */,
@@ -320,7 +323,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		797C600A1BD40CBB00E2BFB4 /* Build configuration list for PBXNativeTarget "EZ IPTV" */ = {
+		797C600A1BD40CBB00E2BFB4 /* Build configuration list for PBXNativeTarget "iNetTV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				797C600B1BD40CBB00E2BFB4 /* Debug */,

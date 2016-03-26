@@ -38,6 +38,7 @@ class ViewController : UICollectionViewController {
 	{
 		let tvStationsControllerInstance = tvStationsController()
 		if let _ = tvStationsControllerInstance {
+			
 			let numberOfItems = tvStationsControllerInstance!.numberOfTVStationsInRegion(region)
 			return numberOfItems
 		}
