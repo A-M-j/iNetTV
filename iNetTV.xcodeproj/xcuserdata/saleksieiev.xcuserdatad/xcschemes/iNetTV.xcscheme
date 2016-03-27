@@ -86,6 +86,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "iNetTV"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
